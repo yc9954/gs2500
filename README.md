@@ -16,7 +16,9 @@
 
 **핵심은 더 많은 시뮬레이션을 보여주는 것이 아니라, 비교 결과를 점주가 실제로 바꿀 수 있는 위치와 행동으로 끝까지 연결하는 것입니다.**
 
-![같은 시점에서 현재 진열과 후보안의 3D 방문 기록·누적 매출을 비교하는 GS2500](docs/screenshots/simulation-board.jpg)
+<p align="center">
+  <img src="docs/screenshots/simulation-board.jpg" alt="같은 시점에서 현재 진열과 후보안의 3D 방문 기록·누적 매출을 비교하는 GS2500" width="960" />
+</p>
 
 > GS 개발자 리그 해커톤용 작동 데모입니다. 점포·상품·매출·행사는 합성 데이터이며, 실제 GS25 내부 시스템과 연결되어 있지 않습니다. 메인 워크스페이스는 **로컬 규칙으로 계산**하며 JEV를 호출하지 않습니다. 예상 매출은 실제 성과나 보장치가 아닙니다.
 
@@ -140,38 +142,84 @@ npm start
 <a id="product-tour"></a>
 ## Product Tour
 
-아래 15장은 **2026-09-22 로컬 앱에서 직접 캡처한 화면**입니다. 목업이 아닌 실행 화면이며, 화면 속 매출과 이력은 합성 예시입니다. 캡처 원본은 [docs/screenshots](docs/screenshots)에 보관합니다.
+아래 15장(상단 대표 화면 1장 + 격자 14장)은 **2026-09-22 로컬 앱에서 직접 캡처한 화면**입니다. 목업이 아닌 실행 화면이며, 화면 속 매출과 이력은 합성 예시입니다. 캡처 원본은 [docs/screenshots](docs/screenshots)에 보관합니다.
+
+<table>
+<tr>
+<td width="50%"><img src="docs/screenshots/portfolio.jpg" alt="담당 점포 실적과 검토 우선순위" width="100%" /></td>
+<td width="50%"><img src="docs/screenshots/bay-list.jpg" alt="점포별 진단 대기 매대와 후보 목록" width="100%" /></td>
+</tr>
+<tr>
+<td valign="top"><sub><strong>01.</strong> 담당 점포 실적과 검토 우선순위</sub></td>
+<td valign="top"><sub><strong>02.</strong> 점포별 진단 대기 매대와 후보 목록</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/screenshots/recommendation-evidence.jpg" alt="시의성·온라인 트렌딩·유사 점포·과거 판매 이력을 연결한 추천 근거" width="100%" /></td>
+<td width="50%"><img src="docs/screenshots/planogram-diff.jpg" alt="AS-IS와 TO-BE의 단·열 비교 및 이동할 칸 강조" width="100%" /></td>
+</tr>
+<tr>
+<td valign="top"><sub><strong>03.</strong> 시의성·온라인 트렌딩·유사 점포·과거 판매 이력을 연결한 추천 근거</sub></td>
+<td valign="top"><sub><strong>04.</strong> AS-IS와 TO-BE의 단·열 비교 및 이동할 칸 강조</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/screenshots/candidate-detail.jpg" alt="선택 후보의 3D 기록과 30일 예상 매출·총이익·결품·작업 부담" width="100%" /></td>
+<td width="50%"><img src="docs/screenshots/manager-approval.jpg" alt="관리자 승인 대화상자와 수정 가능한 점주 안내 초안" width="100%" /></td>
+</tr>
+<tr>
+<td valign="top"><sub><strong>05.</strong> 선택 후보의 3D 기록과 30일 예상 매출·총이익·결품·작업 부담</sub></td>
+<td valign="top"><sub><strong>06.</strong> 관리자 승인 대화상자와 수정 가능한 점주 안내 초안</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/screenshots/owner-guide.jpg" alt="점주에게 표시되는 승인안과 변경 선반" width="100%" /></td>
+<td width="50%"><img src="docs/screenshots/results-tracking.jpg" alt="적용 후 2주·4주 제안의 동일 기간 매출과 품절 비교" width="100%" /></td>
+</tr>
+<tr>
+<td valign="top"><sub><strong>07.</strong> 점주에게 표시되는 승인안과 변경 선반</sub></td>
+<td valign="top"><sub><strong>08.</strong> 적용 후 2주·4주 제안의 동일 기간 매출과 품절 비교</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/screenshots/results-overview.jpg" alt="진열 시뮬레이션 결과 전체 요약과 필터" width="100%" /></td>
+<td width="50%"><img src="docs/screenshots/operations-overview.jpg" alt="점포 운영 개요와 이번 주 우선 확인할 실행 제안" width="100%" /></td>
+</tr>
+<tr>
+<td valign="top"><sub><strong>09.</strong> 진열 시뮬레이션 결과 전체 요약과 필터</sub></td>
+<td valign="top"><sub><strong>10.</strong> 점포 운영 개요와 이번 주 우선 확인할 실행 제안</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/screenshots/sales-context.jpg" alt="동기간 매출 비교와 날짜별 운영 이슈 표시" width="100%" /></td>
+<td width="50%"><img src="docs/screenshots/operations-timeline.jpg" alt="품절·보충·날씨·진열 변경을 분류한 운영 기록" width="100%" /></td>
+</tr>
+<tr>
+<td valign="top"><sub><strong>11.</strong> 동기간 매출 비교와 날짜별 운영 이슈 표시</sub></td>
+<td valign="top"><sub><strong>12.</strong> 품절·보충·날씨·진열 변경을 분류한 운영 기록</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/screenshots/recommendations.jpg" alt="상품 위치와 근거 수준을 포함한 다음 실행 추천" width="100%" /></td>
+<td width="50%"><img src="docs/screenshots/observation-form.jpg" alt="사진·상품·선반 위치·품절 시간·현장 사실을 입력하는 관찰 폼" width="100%" /></td>
+</tr>
+<tr>
+<td valign="top"><sub><strong>13.</strong> 상품 위치와 근거 수준을 포함한 다음 실행 추천</sub></td>
+<td valign="top"><sub><strong>14.</strong> 사진·상품·선반 위치·품절 시간·현장 사실을 입력하는 관찰 폼</sub></td>
+</tr>
+</table>
 
 ### 01. 담당 점포 실적 — 지원할 점포를 먼저 찾습니다
 
 네 점포의 전년 동기비·매출·목표 달성률을 한눈에 확인하고, 선택한 점포의 매대로 들어갑니다. 이 실적은 점포 전체 지표이며 뒤에서 계산하는 24개 SKU의 예상 매출과 다릅니다.
 
-![담당 점포 실적과 검토 우선순위](docs/screenshots/portfolio.jpg)
-
-<details>
-<summary>진단 대기 매대 목록 보기</summary>
-
-![점포별 진단 대기 매대와 후보 목록](docs/screenshots/bay-list.jpg)
+**진단 대기 매대 목록 보기**
 
 한 행이 점포 안의 한 진열 구획입니다. 각 매대에서 세 가지 후보, 점포 실적, 검토할 가설을 확인할 수 있습니다.
-
-</details>
 
 ### 02. 추천 근거와 선반 도식 — “왜 지금, 어디를?”에 답합니다
 
 역삼중앙점 재고 우선안은 주변 행사·온라인 관심·유사 역세권 사례·과거 판매 이력이라는 네 관점으로 제안 이유를 설명합니다. 각 설명에 데모 가정임을 함께 표시합니다.
 
-![시의성·온라인 트렌딩·유사 점포·과거 판매 이력을 연결한 추천 근거](docs/screenshots/recommendation-evidence.jpg)
-
 4단 × 6열의 같은 상품을 현재안과 후보안으로 나란히 보여줍니다. **바뀌는 칸만 초록색 테두리·배경·이동 배지로 강조**하고, 나머지는 유지합니다. 참고 사진 속 상품과 합성 SKU는 다르므로 정확한 변경 위치는 선반 도식을 기준으로 봅니다.
-
-![AS-IS와 TO-BE의 단·열 비교 및 이동할 칸 강조](docs/screenshots/planogram-diff.jpg)
 
 ### 03. 다중 진열 비교 — 숫자와 공간을 같은 기록으로 봅니다
 
 점포마다 현재안과 세 후보를 묶어 비교합니다. 누적 매출은 0원부터 시작하고, 재생 위치·일시정지·배속을 공통으로 제어합니다. 카드를 열면 선택한 진열의 대표 방문과 30일 최종 예상·작업 부담을 함께 볼 수 있습니다.
-
-![선택 후보의 3D 기록과 30일 예상 매출·총이익·결품·작업 부담](docs/screenshots/candidate-detail.jpg)
 
 3D는 계산이 끝난 방문 기록의 **대표 표본 재생**입니다. 모든 고객의 실시간 동시성이나 정확한 결제 순간을 재현하지 않으며, 캐릭터 재생이 별도 매출을 만들지 않습니다.
 
@@ -179,71 +227,41 @@ npm start
 
 예상 변화, 작업 시간, 추가 발주 여부와 안내 문구를 검토한 뒤 승인합니다. 승인 전 후보는 점주에게 보이지 않으며, 승인 후 선택한 점포·매대·후보만 노출합니다.
 
-![관리자 승인 대화상자와 수정 가능한 점주 안내 초안](docs/screenshots/manager-approval.jpg)
-
-<details>
-<summary>승인된 점주용 실행 가이드 보기</summary>
-
-![점주에게 표시되는 승인안과 변경 선반](docs/screenshots/owner-guide.jpg)
+**승인된 점주용 실행 가이드 보기**
 
 점주는 전체 실행·부분 실행·거절을 선택하고 현장 기록을 남길 수 있습니다. 실제 문자 발송, 계정 간 전송, 자동 발주는 하지 않습니다. 화면상의 역할 분리는 데모 상태이며 운영용 인증·권한 시스템은 아닙니다.
-
-</details>
 
 ### 05. 진열 시뮬레이션 결과 — 이미 적용한 제안을 추적합니다
 
 미래에 무엇을 보라는 가이드가 아니라, **적용 후 14일·28일이 지난 합성 사례**를 확인하는 화면입니다. 같은 길이의 적용 전후 기간, 주차별 매출, 품절 시간, 전체·부분 적용과 후속 메모를 비교합니다. 개선된 사례뿐 아니라 재점검이 필요한 사례도 포함합니다.
 
-![적용 후 2주·4주 제안의 동일 기간 매출과 품절 비교](docs/screenshots/results-tracking.jpg)
-
-<details>
-<summary>전체 추적 현황과 기간·상태 필터 보기</summary>
-
-![진열 시뮬레이션 결과 전체 요약과 필터](docs/screenshots/results-overview.jpg)
+**전체 추적 현황과 기간·상태 필터 보기**
 
 네 과거 제안은 별도로 작성한 합성 이력입니다. 전후 매출 변화는 진열 변경만의 인과효과나 현재 시뮬레이션의 정확도를 입증하는 값이 아닙니다.
-
-</details>
 
 ### 06. 점포 운영 — 기록에서 다음 행동으로 이어집니다
 
 점포 사진, 매출의 흐름, 품절·날씨·행사·진열 변경 기록을 모읍니다. 다음 제안은 상품과 위치, 확인할 사실, 필요한 행동까지 구체화합니다. 예를 들어 매대가 비었다면 새 배치보다 **창고 재고와 보충부터 확인**하도록 안내합니다.
 
-![점포 운영 개요와 이번 주 우선 확인할 실행 제안](docs/screenshots/operations-overview.jpg)
-
-<details>
-<summary>매출 차트와 운영 이슈 타임라인 보기</summary>
+**매출 차트와 운영 이슈 타임라인 보기**
 
 #### 매출의 흐름, 그날의 맥락
-
-![동기간 매출 비교와 날짜별 운영 이슈 표시](docs/screenshots/sales-context.jpg)
 
 7·14·28일 조회와 비교 기간, 날짜별 이슈를 함께 확인합니다. 화면의 전후 변화가 검증된 인과효과라는 뜻은 아닙니다.
 
 #### 운영 타임라인
 
-![품절·보충·날씨·진열 변경을 분류한 운영 기록](docs/screenshots/operations-timeline.jpg)
-
 기록마다 날짜·출처·위치·전후 수치와 확인 여부를 구분합니다. 알 수 없는 영향은 숫자를 만들어 채우지 않고 관찰 중으로 남깁니다.
 
-</details>
-
-<details>
-<summary>구체적인 추천 카드와 사진·관찰 입력 보기</summary>
+**구체적인 추천 카드와 사진·관찰 입력 보기**
 
 #### 다음 실행 제안
-
-![상품 위치와 근거 수준을 포함한 다음 실행 추천](docs/screenshots/recommendations.jpg)
 
 추천의 근거 수, 직접 기록 여부와 관찰 부족 상태를 표시합니다. 관찰을 저장하면 규칙 기반 추천 근거가 갱신되지만, 이 좌표가 기존 30일 후보에 자동 반영되지는 않습니다.
 
 #### 사진과 사람이 확인한 사실
 
-![사진·상품·선반 위치·품절 시간·현장 사실을 입력하는 관찰 폼](docs/screenshots/observation-form.jpg)
-
 사진은 선택 사항이며 JPG·PNG·WebP, 최대 5 MiB를 허용합니다. 브라우저에서만 읽고 자동 상품 인식이나 모델 학습을 실행하지 않습니다.
-
-</details>
 
 <a id="simulation"></a>
 ## Simulation Model
